@@ -5,7 +5,11 @@ type Props = {}
 
 function page({}: Props) {
   return (
-    <Button/>
+    <>
+      <Button className='primary'>Hello</Button>
+      <Button className='red'>Hello</Button>
+    </>
+    
   )
 }
 

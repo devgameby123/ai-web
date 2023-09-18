@@ -1,10 +1,14 @@
 import React from 'react'
+import './button.css'
 
-type Props = {}
+type Props = {
+  className : string
+  , children : string
+}
 
-function Button({}: Props) {
+function Button({className, children }: Props) {
   return (
-    <div>Button</div>
+    <button className={className}>{children}</button>
   )
 }
 
