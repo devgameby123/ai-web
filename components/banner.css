@@ -1,0 +1,9 @@
+.Banner{
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
+}
+.Banner .image{
+    position: relative;
+    top: -600px;
+}
