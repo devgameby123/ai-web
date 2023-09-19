@@ -6,8 +6,10 @@ type Props = {}
 function page({}: Props) {
   return (
     <>
-      <Button className='primary'>Hello</Button>
-      <Button className='red'>Hello</Button>
+      <Button className='btnNext'>Hello</Button>
+      <Button className='btnAddFavour1'>Add to Favourite</Button>
+      <button className='btnAddFavour2'><span>Add to Favourite</span></button>
+
     </>
     
   )
