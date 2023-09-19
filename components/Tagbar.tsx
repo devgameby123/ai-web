@@ -7,11 +7,11 @@ type Props = {
   , children : string
 }
 
-function Button({className, children }: Props) {
+function Tagbar({className, children }: Props) {
   return (
-    <button className={className}>{children}</button>
+    <Tagbar className={className}>{children}</Tagbar>
   )
 }
 
-export default Button
+export default Tagbar
 
