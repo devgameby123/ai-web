@@ -1,9 +1,10 @@
 import React from 'react'
 import './button.css'
 
+
 type Props = {
   className : string
-  , children : string
+  , children : string 
 }
 
 function Button({className, children }: Props) {
@@ -13,3 +14,4 @@ function Button({className, children }: Props) {
 }
 
 export default Button
+
