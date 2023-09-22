@@ -1,0 +1,5 @@
+.container-content{
+    display: flex;
+    gap: 50px;
+    margin: 80px 50px;
+}

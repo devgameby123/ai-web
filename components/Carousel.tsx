@@ -5,10 +5,11 @@ import React, { useState, useEffect } from 'react';
 
 interface CarouselProps {
   images: string[],
-  autoSlideInterval?: number;
+  autoSlideInterval?: number,
+  className?:string;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ images,autoSlideInterval = 3000 }) => {
+const Carousel: React.FC<CarouselProps> = ({ className,images,autoSlideInterval = 3000 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
@@ -34,14 +35,14 @@ const Carousel: React.FC<CarouselProps> = ({ images,autoSlideInterval = 3000 }) 
   }, [images, autoSlideInterval]);
 
   return (
-    <div className="carousel">
-      <button onClick={prevImage} className="button">
-        Previous
-      </button>
-      <Image width={1980} height={1080} src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`}className="image"/>
-      <button onClick={nextImage} className="button">
-        Next
-      </button>
+    <div className={`carousel ${className}`}>
+      <div className='container-image'>
+      <Image width={1980} height={1080} src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`}className="image "/>
+      </div>
+      <div className='container-button'>
+        <button onClick={prevImage} className="button"></button>
+        <button onClick={nextImage} className="button"></button>
+      </div>
     </div>
   );
 };

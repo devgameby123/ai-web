@@ -1,0 +1,16 @@
+.container-card1{
+    width: 350px;
+    height: 341px;
+    background-color: black;
+    color: white;
+}
+.container-image1{
+    position: relative;
+    width: 350px;
+    height: 320px;
+    overflow: hidden;
+}
+p{
+    margin: 0.4rem 0;
+    font-size: 24px;
+}
