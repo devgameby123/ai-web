@@ -1,3 +1,6 @@
+.Card:hover{
+    transform: scale(1.2);
+}
 .container-card1{
     width: 350px;
     height: 341px;
@@ -10,7 +13,24 @@
     height: 320px;
     overflow: hidden;
 }
-p{
+
+.container-card2{
+    width: 257px;
+    height: 392px;
+    background-color: black;
+    color: white;
+}
+.container-card2 .container-image2{
+    position: relative;
+    width: 256px;
+    height: 315px;
+    overflow: hidden;
+}
+.container-card1 p{
     margin: 0.4rem 0;
     font-size: 24px;
+}
+.container-card2 p{
+    margin: 0.4rem 0;
+    font-size: 16px;
 }

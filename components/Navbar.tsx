@@ -13,7 +13,8 @@ function Navbar({}: Props) {
           <span>บริษัท เพื่อน มี จำกัด</span>
         </div>
         <ul>
-            <Link className='link' href={"/"}>Home</Link>
+            
+            <Link className='link' href={"#Movie"}>Home</Link>
             <span> | </span>
             <Link className='link' href={"/"}>MOVIE</Link>
             <span> | </span>

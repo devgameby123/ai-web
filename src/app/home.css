@@ -1,5 +1,22 @@
 .container-content{
     display: flex;
-    gap: 50px;
-    margin: 80px 50px;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 0px 120px 0px 120px;
+    align-items: center;
+}
+
+.container-content-sm{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 0px 120px 0px 120px;
+    align-items: center;
+
+}
+h1{
+    margin: 60px 70px 40px 120px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
 }
