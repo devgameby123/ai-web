@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar/>
+      
       <Carousel className='top-gap' images={images} />
       <h1>Trending</h1>
       <div className='container-content'>
@@ -38,23 +38,23 @@ export default function Home() {
         <Card classNameCTN="container-card1" classNameC="container-image1" image="/Card/co1.jpg"/>
       </div>
       <h1>COMEDY</h1>
-      <div id="Movie" className="container-content-sm">
+      <div id="COMEDY" className="container-content-sm">
         {renderCardImage()}
       </div>
-      <h1>COMEDY</h1>
-      <div id="Movie" className="container-content-sm">
+      <h1>HORROR</h1>
+      <div id="HORROR" className="container-content-sm">
         {renderCardImage()}
       </div>
-      <h1>COMEDY</h1>
-      <div id="Movie" className="container-content-sm">
+      <h1>ANIME</h1>
+      <div id="ANIME" className="container-content-sm">
         {renderCardImage()}
       </div>
-      <h1>COMEDY</h1>
-      <div id="Movie" className="container-content-sm">
+      <h1>SERIES</h1>
+      <div id="SERIES" className="container-content-sm">
         {renderCardImage()}
       </div>
-      <h1>COMEDY</h1>
-      <div id="Movie" className="container-content-sm">
+      <h1>CARTOON</h1>
+      <div id="CARTOON" className="container-content-sm">
         {renderCardImage()}
       </div>
     </>

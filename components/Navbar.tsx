@@ -14,15 +14,13 @@ function Navbar({}: Props) {
         </div>
         <ul>
             
-            <Link className='link' href={"#Movie"}>Home</Link>
+            <Link className='link' href={"/"}>Home</Link>
             <span> | </span>
-            <Link className='link' href={"/"}>MOVIE</Link>
+            <Link className='link' href={"/#COMEDY"}>MOVIE</Link>
             <span> | </span>
-            <Link className='link' href={"/"}>CARTOON</Link>
+            <Link className='link' href={"/#ANIME"}>CARTOON</Link>
             <span> | </span>
-            <Link className='link' href={"/"}>SERIES</Link>
-            <span> | </span>
-            <Link className='link' href={"/"}>ANIME</Link>
+            <Link className='link' href={"/#SERIES"}>SERIES</Link>
         </ul>
         <div>
             <p>EN</p>
