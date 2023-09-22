@@ -1,5 +1,5 @@
 import React from 'react'
-import './button.css'
+import './tagbar.css'
 
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 
 function Tagbar({className, children }: Props) {
   return (
-    <Tagbar className={className}>{children}</Tagbar>
+    <div  className={className}>{children}</div>
   )
 }
 
