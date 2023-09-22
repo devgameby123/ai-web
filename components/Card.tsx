@@ -17,7 +17,7 @@ const Card = ({classNameCTN,classNameC,w = 350,h = 350,image,link="/"}:Props) =>
     <Link className="Card" href={link}>
         <div className={classNameCTN}>
             <div className={classNameC}>
-            <Image objectFit="cover" className="image" src={image} width={w} height={h} alt="Image in Card"/>
+            <Image className="image" src={image} width={w} height={h} alt="Image in Card"/>
             </div>
             <p>The Little Mermaid</p>
         </div>
