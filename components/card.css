@@ -2,6 +2,7 @@
     transform: scale(1.2);
 }
 .container-card1{
+    position: relative;
     width: 350px;
     height: 341px;
     background-color: black;
@@ -15,6 +16,7 @@
 }
 
 .container-card2{
+    position: relative;
     width: 257px;
     height: 392px;
     background-color: black;
@@ -34,17 +36,22 @@
     margin: 0.4rem 0;
     font-size: 16px;
 }
-
+.time{
+    position: absolute;
+    z-index: 20;
+    top: 5px;
+    left: 0;
+}
 
 .container-card1 .info{
     display: flex;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     justify-content: space-between;
     align-items: center;
 }
 .container-card2 .info{
     display: flex;
-    margin-top: 0.5rem;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 0.5rem;
 }

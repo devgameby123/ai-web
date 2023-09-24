@@ -23,7 +23,7 @@ function renderCardImage(){
 
     for(let i=0;i<CardImage.length;i++){
         TagImageOut.push(
-          <Card2 classNameCTN="container-card2" classNameC="container-image2" image={CardImage[i]} w={266} h={344}/>
+          <Card2 classNameCTN="container-card2" classNameC="container-image2"  image={CardImage[i]} w={266} h={344}/>
         )
     }
     return TagImageOut;

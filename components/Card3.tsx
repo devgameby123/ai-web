@@ -22,13 +22,6 @@ const Card = ({classNameCTN,classNameC,classNameTag="",w = 350,h = 350,image,lin
             <div className={classNameC}>
             <Image className="image" src={image} width={w} height={h} alt="Image in Card"/>
             </div>
-            <div className="time">
-              <Tagbar className="tagTime">3:12:00</Tagbar>
-            </div>
-            <div className="info">
-              <p>The Little Mermaid</p>
-              <Tagbar className={classNameTag}>Horror</Tagbar>
-            </div>
         </div>
     </Link>
   )

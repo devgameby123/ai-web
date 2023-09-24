@@ -10,7 +10,7 @@ const data = {
     datasets: [
       {
         label: '# of Votes',
-        data: [80, 20],
+        data: [20, 80],
         backgroundColor: [
           'rgba(255, 0, 0, 0.7)',
           'rgba(0, 255, 42, 1)',
@@ -25,13 +25,24 @@ const data = {
     ],
   };
 
-
   type Props = {
-
+    width: number; 
+    height: number; 
   }
-function PieChart({}: Props) {
+function PieChart({width,height}: Props) {
+
+  const options = {
+    maintainAspectRatio: false,
+    responsive: false,
+    plugins: {
+      legend: {
+        display: false, // Hide the legend
+      },
+    },
+  };
+
     return (
-        <Pie data={data} />
+        <Pie width={width} height={height} data={data} options={options} />
     )
 }
 

@@ -14,11 +14,16 @@
     background-color: red;
     color: white;
 }
+.back-color-white{
+    background-color: white;
+    color: black;
+}
 .tagTime{
     display: inline-block;
     border-radius: 5px;
     background-color: transparent;
     border: 2px solid #f44336;
+    background-color: #f44336;
     color: #FFFFFF;
     text-align: center;
     font-size: 16px;

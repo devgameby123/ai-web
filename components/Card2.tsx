@@ -15,15 +15,21 @@ type Props = {
     image:string;
 }
 
-const Card2 = ({classNameCTN,classNameC,classNameTag="",w = 350,h = 350,image,link="/"}:Props) => {
+const Card2 = ({classNameCTN,classNameC,w = 350,h = 350,image,link="/"}:Props) => {
   return (
     <Link className="Card" href={link}>
         <div className={classNameCTN}>
             <div className={classNameC}>
             <Image className="image" src={image} width={w} height={h} alt="Image in Card"/>
             </div>
+            <div className="time">
+              <Tagbar className="tagTime">3:12:00</Tagbar>
+            </div>
             <div className="info">
-              <Tagbar className={classNameTag}>Horror</Tagbar>
+              <div>
+                <Tagbar className="tagHD">HD</Tagbar>
+                <Tagbar className="tagSeason">Season1</Tagbar>
+              </div>
               <p>The Little Mermaid</p>
             </div>
         </div>
