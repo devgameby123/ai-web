@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import "./navbar.css"
 import Image from 'next/image'
+import Button from './Button'
 
 type Props = {}
 
@@ -23,7 +24,7 @@ function Navbar({}: Props) {
             <Link className='link' href={"/#SERIES"}>SERIES</Link>
         </ul>
         <div>
-            <p>EN</p>
+            <Button className='btnSignInHome'>Sign in</Button>
         </div>
     </nav>
   )

@@ -10,7 +10,10 @@
     padding: 4px;
     margin-top: 10;
 }
-
+.back-color-red{
+    background-color: red;
+    color: white;
+}
 .tagTime{
     display: inline-block;
     border-radius: 5px;
@@ -40,17 +43,14 @@
 }
 
 .tagCategory{
-    display: inline-block;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    color: #000000;
+    display: inline;
+    text-align: center;
+    border-radius: 10px;
     text-align: center;
     font-size: 16px;
-    width: 83px; 
-    height: 34px;
-    padding: 2px;
-    margin-left: 10px;
+    padding: 5px 10px;
 }
+
 
 .tagDate{
     display: inline-block;

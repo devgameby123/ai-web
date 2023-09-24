@@ -15,7 +15,7 @@ type Props = {
     image:string;
 }
 
-const Card = ({classNameCTN,classNameC,classNameTag="",w = 350,h = 350,image,link="/"}:Props) => {
+const Card2 = ({classNameCTN,classNameC,classNameTag="",w = 350,h = 350,image,link="/"}:Props) => {
   return (
     <Link className="Card" href={link}>
         <div className={classNameCTN}>
@@ -23,12 +23,12 @@ const Card = ({classNameCTN,classNameC,classNameTag="",w = 350,h = 350,image,lin
             <Image className="image" src={image} width={w} height={h} alt="Image in Card"/>
             </div>
             <div className="info">
-              <p>The Little Mermaid</p>
               <Tagbar className={classNameTag}>Horror</Tagbar>
+              <p>The Little Mermaid</p>
             </div>
         </div>
     </Link>
   )
 }
 
-export default Card
+export default Card2

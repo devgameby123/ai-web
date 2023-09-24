@@ -5,7 +5,7 @@
     width: 350px;
     height: 341px;
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .container-image1{
     position: relative;
@@ -33,4 +33,18 @@
 .container-card2 p{
     margin: 0.4rem 0;
     font-size: 16px;
+}
+
+
+.container-card1 .info{
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-card2 .info{
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
 }
