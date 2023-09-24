@@ -14,7 +14,7 @@ function ButtonImage({className, children,image,w,h,gap }: Props) {
   return (
     <div className='container-icon'>
         <Image  src={image} width={w} height={h} alt='asdasd'/>
-        <button style={{margin: `0 ${gap}px`,}} className={className}>{children}</button>
+        <div  className={className}>{children}</div>
     </div>
    
   )
