@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
-
+body{
+    color: white;
+}
 .container{
     position: relative;
 }
@@ -25,10 +27,12 @@ p{
     color: white;
     font-family: 'Poppins', sans-serif;
 }
-.btn{
+.card-single .item{
     margin-top: 25rem;
-    margin-left: 27rem;
+    margin-left: 20rem;
+
 }
+
 .tag{
     display: flex;
     gap: 0.7rem;
@@ -63,4 +67,8 @@ p{
     width: 100vw;
     justify-content: center;
     gap: 1rem;
+}
+.container-comment{
+    width: 100;
+    margin: 10rem 14rem;
 }

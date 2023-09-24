@@ -1,6 +1,6 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
-
+import React, { useState } from 'react';
 
 import "./info.css"
 import Card from '../../../components/Card3'
@@ -8,10 +8,19 @@ import Tagbar from '../../../components/Tagbar'
 import Button from '../../../components/Button'
 import PieChart from '../../../components/Chart/PieChart'
 import Card2 from '../../../components/Card2'
+import CommentForm from '../../../components/CommentForm';
+import CommentList from '../../../components/CommentList';
+
 
 type Props = {}
 
-const page = (props: Props) => {
+const Page: React.FC = () => {
+  const [comments, setComments] = useState<string[]>([]);
+
+  const addComment = (comment: string) => {
+    setComments([...comments, comment]);
+  };
+
   return (
     <div className='container'>
       <div className='back-image'>
@@ -19,8 +28,8 @@ const page = (props: Props) => {
       </div>
       <div className='card-single'>
         <Card  w={315} h={426} image='/Card/co1.jpg'/>
-        <p>Free Guy</p>
-        <Button  className='btnAdd2 btn'>Add to Fovourite</Button>
+        <p >Free Guy</p>
+        <Button  className='btnAdd2 item'>Add to Fovourite</Button>
       </div>
       <div className='Chart'>
         <PieChart width={200} height={200}/>
@@ -53,9 +62,12 @@ const page = (props: Props) => {
           <Card2 classNameCTN="container-card2" classNameC="container-image2" w={266} h={344} image='/Card/co4.jpeg'/>
         </div>
       </div>
-      
+      <div className='container-comment'>
+          <CommentForm onSubmit={addComment} />
+          <CommentList comments={comments} />
+        </div>
     </div>
   )
 }
 
-export default page
+export default Page

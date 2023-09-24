@@ -37,7 +37,7 @@ export default function Home() {
       <Carousel className='top-gap' images={images} />
       <h1>Trending</h1>
       <div className='container-content'>
-        <Card classNameCTN="container-card1" classNameC="container-image1" classNameTag="tagCategory back-color-red" image="/Card/co1.jpg"/>
+        <Card link="/movie-info" classNameCTN="container-card1" classNameC="container-image1" classNameTag="tagCategory back-color-red" image="/Card/co1.jpg"/>
         <Card classNameCTN="container-card1" classNameC="container-image1" classNameTag="tagCategory back-color-red" image="/Card/co1.jpg"/>
         <Card classNameCTN="container-card1" classNameC="container-image1" classNameTag="tagCategory back-color-red" image="/Card/co1.jpg"/>
       </div>

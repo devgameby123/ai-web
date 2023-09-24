@@ -17,7 +17,7 @@ type Props = {
 
 const Card = ({classNameCTN,classNameC,classNameTag="",w = 350,h = 350,image,link="/"}:Props) => {
   return (
-    <Link className="Card" href={link}>
+    <Link className="" href={link}>
         <div className={classNameCTN}>
             <div className={classNameC}>
             <Image className="image" src={image} width={w} height={h} alt="Image in Card"/>
