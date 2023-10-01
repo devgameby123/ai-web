@@ -15,6 +15,7 @@ type Props = {
     image:string;
 }
 
+
 const Card2 = ({classNameCTN,classNameC,w = 350,h = 350,image,link="/"}:Props) => {
   return (
     <Link className="Card" href={link}>
